@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;    
+}
+@font-face {
+    font-family: 'Alcubierre';
+    src: url('/Assets/Fonts/Alcubierre.otf');
+}
+@font-face {
+    font-family: 'painter';
+    src: url('/Assets/Fonts/Painter_PERSONAL_USE_ONLY.ttf');
+}
+@font-face {
+    font-family: 'sinkin-sans';
+    src: url('/Assets/Fonts/sinkin-sans/SinkinSans-200XLight.otf');
+}
+h1{
+    font-family: 'sinkin-sans';
+    font-size: 40px;
+    color:#846009 ;
+}
+.header{
+    height: 40vh;
+    width: 100%;
+
+}
+
+body{
+    background-color: #1b1b1b;
+}
+.logo-container{
+    height: 50%;
+    background:#1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar{
+    
+    border-top: 1px solid #846009;
+    border-bottom: 1px solid #846009;
+    
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    
+    
+}
+li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+li a, .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #846009;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1b1b1b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .nav-bar a {
+      color: #fafafa;
+  }
+  .dropdown-content a:hover {background-color: #846009;}
+  
+ .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.title{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #846009;
+    font-size: 30px;
+}
+
+.gallery-container{
+    margin-top: 5%;
+    padding: 0 2%;
+    width: 100%;
+    height: 300vh;
+    box-sizing: border-box;
+}
+.gallery-wrapper{
+    
+    
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    row-gap: 20px;
+    grid-template-areas: "f1 f1 f2 f2"
+                         "f1 f1 f2 f2"
+                         "f3 f3 f3 f4"
+                         "f3 f3 f3 f4"
+                         "f3 f3 f3 f5"
+                         "f3 f3 f3 f5"
+                         "f6 f6 f7 f7"
+                         "f6 f6 f7 f7"
+                         "f6 f6 f7 f7"
+                         "f8 f8 f8 f8"
+                         "f8 f8 f8 f8"
+                         "f8 f8 f8 f8";
+}
+
+.one{
+    grid-area: f1;
+    
+}
+.one img{
+    object-fit: cover;
+}
+.two{
+    grid-area: f2;
+}
+.three{
+    grid-area: f3;
+}
+.four{
+    grid-area: f4;
+}
+.five{
+    grid-area: f5;
+}
+.six{
+    grid-area: f6;
+}
+.seven{
+    grid-area: f7;
+}
+.eight{
+    grid-area: f8;
+}
+.box{
+    width: 100%;
+    height: 100%;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    
+}
+.portrait-container{
+    margin-top: 5%;
+ padding: 2%;
+ width: 100%;
+ height: 300vh;
+ 
+ box-sizing: border-box;
+}
+.portrait-gallery{
+    
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr  ;
+    row-gap: 20px;
+    grid-template-areas: "f1 f2 f3 f4"
+                         "f1 f2 f5 f4"
+                         "f6 f9 f5 f7"
+                         "f8 f9 f10 f12"
+                         "f11 f11 f13 f12"
+                         
+                         ;
+}
+.w-one{
+    grid-area: f1;
+}
+.w-two{
+    grid-area:f2 ;
+}
+.w-three{
+    grid-area: f5;
+} 
+.w-four{
+    grid-area: f3;
+}
+.w-five{
+    grid-area: f4;
+}
+.w-six{
+    grid-area: f6;
+}
+.w-eight
+{
+    grid-area:f8;
+} 
+.w-nine{
+    grid-area: f9;
+}
+.w-ten{
+    grid-area:f10 ;
+}
+.w-eleven{
+    grid-area: f11;
+}
+.w-twelve{
+    grid-area: f12;
+}
+ .w-13{
+    grid-area: f13;
+}
+
+
+
+.box{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;  
+}
+
+.box img{
+    width: 100%;     
+}      
+
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width:1024px){
+
+     /*mobile menu*/
+     .nav-bar{
+        display: none;     
+    }
+    .mobile-menu {
+        display:block;
+        width:100%;
+      background: #846009 /*#8aa8bd/*e0b88f/*c99393/*e5d1a4/*dcc591/*EFD3A3*/;
+      line-height: 1.6em;
+      font-weight: 400;
+      width:100%;
+      text-align:center;
+          position: absolute;
+        margin:0 auto;
+        z-index: 1000;
+      }
+      /*Strip the ul of padding and list styling*/
+      .mobile-menu ul {
+          list-style-type:none;
+        margin: 0 auto;
+        padding-left:0;
+        text-align:center;
+        width:100%;
+        position: absolute;
+        background: #1b1b1b;
+        z-index: 1000;
+      }
+      
+      /*Create a horizontal list with spacing*/
+      .mobile-menu li {
+          display:inline-block;
+          /*float: left;
+          margin-right: 1px;*/
+          z-index: 1000;
+      }
+      
+      /*Style for menu links*/
+      .mobile-menu li a {
+        z-index: 1000;
+          display:block;
+          min-width:140px;
+          text-align: center;
+         
+          color: #fff;
+        text-transform:uppercase;
+          background: #1b1b1b;
+          text-decoration: none;
+        margin-left:-5px;
+        padding: 10px 0;  
+      -webkit-transition: all 0.4s ease 0s;
+      -moz-transition: all 0.4s ease 0s;
+      -ms-transition: all 0.4s ease 0s;
+      -o-transition: all 0.4s ease 0s;
+      transition: all 0.4s ease 0s;
+      }
+      
+      /*Hover state for top level links*/
+      .mobile-menu li:hover a {
+        z-index: 1000;
+          color: #846009;
+        background-color:#fafafa;
+      }
+      
+      /*Style for dropdown links*/
+      .mobile-menu li:hover ul a {
+        z-index: 1000;
+          background: #fafafa;
+          color: #846009;
+          height: 40px;
+          line-height: 40px;
+      }
+      
+      /*Hover state for dropdown links*/
+      .mobile-menu li:hover .mobile-menu ul a:hover {
+        z-index: 1000;
+          color: #846009;
+      }
+      
+      /*Hide dropdown links until they are needed*/
+      .mobile-menu li ul {
+          display: none;
+      }
+      
+      /*Make dropdown links vertical*/
+      .mobile-menu li ul li {
+          display: block;
+          float: none;
+      }
+      
+      /*Prevent text wrapping*/
+      .mobile-menu li ul li a {
+        z-index: 1000;
+          width: auto;
+          min-width: 100px;
+          padding: 0 20px;
+      }
+      
+      
+      /*Style 'show menu' label button and hide it by default*/
+      .mobile-menu .show-menu {
+          text-decoration: none;
+          color: #fff;
+          background: #846009;
+          text-align: center;
+          padding: 10px 15px;
+          display: none;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      
+      .mobile-menu .show-menu span{
+         padding-left: 25px;
+      }
+      
+      /*Hide checkbox*/
+      .mobile-menu input[type=checkbox]{
+          display: none;
+      }
+      
+      /*Show menu when invisible checkbox is checked*/
+      .mobile-menu input[type=checkbox]:checked ~ #menu{
+          display: block;
+      }
+      
+      /*Responsive Styles*/
+      
+      @media screen and (max-width : 800px){
+        .mobile-menu .lines {
+          border-bottom: 15px double #fafafa; 
+          border-top: 5px solid #fafafa; 
+          content:"";
+          height: 5px; 
+          width:20px;
+          padding-right:15px;
+        float: right;
+      }
+          /*Make dropdown links appear inline*/
+          .mobile-menu ul {
+              position: static;
+              display: none;
+          }
+          /*Create vertical spacing*/
+          .mobile-menu li {
+              margin-bottom: 1px;
+          }
+          /*Make all menu links full width*/
+          .mobile-menu ul li, .mobile-menu li a {
+              width: 100%;
+          }
+          /*Display 'show menu' link*/
+          .mobile-menu .show-menu {
+              display:block;
+          }
+      }
+
+      .dropdown-content{
+        right: 47%;
+      }
+
+      .logo-container h1{
+          font-size: 20px;
+      }
+
+      .title{
+          display: none;
+      }
+
+    .gallery-container{
+        height: 100%;  
+    }
+   
+
+
+    .gallery-wrapper{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "f1 f2" 
+                             "f1 f2" 
+                             "f6 f6" 
+                             "f8 f8" 
+                             "f3 f4"
+                             "f5 f4"
+                             "f5 f7"
+                             "f10 f12"
+                             "f13 f12";
+    }
+
+
+    .portrait-container{
+        height: 100%;
+    }
+    .portrait-gallery{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "f1 f2" 
+                             "f1 f2" 
+                             "f6 f9"
+                             "f8 f9"
+                             "f11 f11"
+                             "f3 f4"
+                             "f5 f4"
+                             "f5 f7"
+                             "f10 f12"
+                             "f13 f12";
+    }   
+}
